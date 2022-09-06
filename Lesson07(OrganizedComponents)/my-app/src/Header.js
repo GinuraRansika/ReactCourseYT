@@ -1,9 +1,10 @@
+import React from 'react';
 
 function Header() {
     return(
         <header>
             <nav className="header-nav">
-                <img src="../../Project01/img/React-icon.svg.png" className="nav-logo"></img>
+                <img src="../public/React-icon.svg.png" alt=""></img>
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>
