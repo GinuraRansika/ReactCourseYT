@@ -13,8 +13,13 @@ function MainContent() {
 function Header() {
     return(
         <header>
-            <nav>
-                <img src="../../Project01/img/React-icon.svg.png" width="40px"></img>
+            <nav className="header-nav">
+                <img src="../../Project01/img/React-icon.svg.png" className="nav-logo"></img>
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
