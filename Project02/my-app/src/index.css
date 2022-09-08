@@ -6,4 +6,42 @@
 
 body {
    margin: 0;
+   padding:0;
+   font-family: Inter, sans-serif;
 }
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   background-color: #24272F;
+   align-items: center;
+   height: 100px;
+   padding:0 1%;
+}
+
+.navbar > .logo {
+   display: flex;
+}
+
+.navbar > .logo > .logo-name {
+   font-size: 30px;
+   font-weight: 700;
+   color:#60DBFB;
+   margin:0px;
+}
+
+.navbar > .logo > img {
+   width: 40px;
+   margin-right: 10px;
+}
+
+.navbar > .logo-description > .description {
+   
+   color:#fff;
+   font-weight: 600;
+}
+
+
+
+
+
