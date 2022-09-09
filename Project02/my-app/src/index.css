@@ -54,6 +54,12 @@ main > .main-title {
 main .facts-list {
    margin-top: 3%;
 }
+
  main .facts-list > li {
    padding-block: 0.9%;
+ }
+
+ main .facts-list > li::marker {
+   font-size: 1.4rem;
+   color:#60DBFB;
  }
