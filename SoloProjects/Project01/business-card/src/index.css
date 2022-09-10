@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    color:#fff;
+    font-family: 'Manrope', sans-serif;
+    /* background-color: #202329; */
+}
+
+.container {
+    text-align: center;
+    width: 20%;
+    margin: 10px 50px;
+    background-color: #202329;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+
+.profile-picture {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.social-media-icons  {
+    padding:15px 0px;
+    font-size: 2em;
+}
+
+.social-media-icons * {
+    margin-right: 20px;
+}
+
+.interest-container {
+    padding: 4%;
+    text-align: left;
+}
+
+.interest-container > .interest-title{
+    font-size: 1.3em;
+}
+
+.interest-container > .interest-description {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.about-container {
+    padding: 4%;
+    text-align: left;
+}
+
+.about-container > .about-title{
+    font-size: 1.3em;
+}
+
+.about-container > .about-description {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.info-container {
+    margin: 0px 0px 1% 0px;
+}
+
+.info-container * {
+    text-decoration: none;
+}
+
+.info-container > .info-basic-details > h3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.info-container > .info-basic-details > h4 {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.info-container > .info-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+}
+.info-container > .info-buttons > button {
+    padding: 8px 30px;
+    border-style: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.info-container > .info-buttons  .icon {
+    margin-right: 5px;
+}
+
+.info-container > .info-buttons #email-button a{
+    color:rgb(0, 0, 0);
+}
+
+.info-container > .info-buttons #linkedin-button{
+    background-color: #004182;
+}
+
+.info-container > .info-buttons #linkedin-button a{
+    color:rgb(255, 255, 255);
+}
+
