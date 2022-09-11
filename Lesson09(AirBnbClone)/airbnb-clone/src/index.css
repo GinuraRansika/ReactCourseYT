@@ -7,16 +7,40 @@
 body {
   margin: 0;
   padding:0;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* * logo will be automatically resized to fit within the its boundaries */
 .app > .navbar {
-  height: 7vh;
+  height: 9vh;
   display:flex;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;;
 }
 
 .app > .navbar > .logo {
-  max-width: 120px;
-  border:1px solid red;
+  max-width: 160px;
+}
+
+.hero-container {
+  justify-content: center;
+  padding: 3% 0px;
+}
+
+.hero-container > .hero-gallery {
+  text-align:center;
+}
+
+.hero-container > .hero-text-part {
+  padding: 3%;
+}
+
+.hero-container > .hero-text-part > .hero-title {
+  font-size: 2.5em;
+  font-weight: 800;
+
+}
+.hero-container > .hero-text-part > .hero-description {
+  max-width: 380px;
+  font-weight: 300;
+
 }
