@@ -23,6 +23,7 @@ export default function Card(){
                 </div>
             </div>
 
+            {/* if you want to made a data driven components you need you use the concept of props */}
             <div className="card">
                 <div className="card-status">ONLINE</div>
                 <img src={Card02Image} alt="" className="card-image"></img>
