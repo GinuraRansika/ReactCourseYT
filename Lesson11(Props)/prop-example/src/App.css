@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contacts > .contact-card {
+    flex-basis: 330px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.contacts > .contact-card > img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    border-radius: 10px;
+    object-fit: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contacts > .contact-card > h3 {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5% 0px;
+}
+
+.contacts > .contact-card > .info-group {
+    display: flex;
+    align-items: center;
+    color: #6b6b6b;
+}
+
+.contacts > .contact-card > .info-group > p {
+    margin-block: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+}
