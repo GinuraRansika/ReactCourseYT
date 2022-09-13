@@ -1,7 +1,7 @@
 import React from "react";
 import Card01Image from "../images/card1.png"
 import Card02Image from "../images/card2.png"
-import Card03Image from "../images/card3.png"
+import Card03Image from "../images/card3-1.jpeg"
 import RedStar from "../images/red-star-2.png"
 
 export default function Card(){

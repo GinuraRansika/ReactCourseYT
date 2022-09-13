@@ -53,6 +53,8 @@ body {
 .cards-container > .card {
   position: relative;
   width:250px;
+  height: 300px;
+  border: 1px solid red;;
   margin:0px 2%;
 }
 
@@ -89,9 +91,14 @@ body {
 
 .cards-container > .card > .card-image {
   width:100%;
+  height: 100%;
 }
 .cards-container > .card > #last-card {
-  width:71%;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
 }
 
 .cards-container > .card > .details > .card-title {
