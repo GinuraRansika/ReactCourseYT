@@ -40,3 +40,22 @@ function App() {
 }
 
 export default App;
+
+
+/*
+  ! What do props help us accomplish?
+      ? just like parameters past into a functions props 
+      ? being passed into a component
+      ? Make that component more reusable
+
+  
+  ! Can I pass a custom prop to a native DOM element?
+      ? Noo
+      because the JSX we use to describe native DOM elements will
+      be turned into REAL DOM elements by React. 
+      And real DOM elements only have the properties/attributes
+      specified in the HTML specification.
+    
+  ! What data type is "props" when the component receives it?
+      ? An Object!
+*/
