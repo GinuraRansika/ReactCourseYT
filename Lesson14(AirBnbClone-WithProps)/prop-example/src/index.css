@@ -96,9 +96,7 @@ body {
 .cards-container > .card > .card-image {
   width:100%;
   height: 100%;
-}
-.cards-container > .card > #last-card {
-  border-radius: 9px;
+    border-radius: 9px;
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   -ms-border-radius: 9px;
