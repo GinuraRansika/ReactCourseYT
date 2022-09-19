@@ -13,6 +13,7 @@ function Cards(){
                     description = {card.description}
                     price = {card.price}
                     location = {card.location}
+                    openSpots = {card.openSpots}
                 />
         )
     })
