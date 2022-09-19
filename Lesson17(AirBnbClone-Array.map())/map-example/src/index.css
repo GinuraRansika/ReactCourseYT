@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* * logo will be automatically resized to fit within the its boundaries */
+.navbar-container > .navbar {
+  height: 9vh;
+  display:flex;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;;
+}
+
+.navbar-container> .navbar > .logo {
+  max-width: 160px;
+}
+
+.hero-container {
+  justify-content: center;
+  padding: 3% 0px;
+  min-width: 100vh;
+}
+
+.hero-container > .hero-gallery {
+  text-align:center;
+}
+
+.hero-container > .hero-text-part {
+  padding: 3%;
+}
+
+.hero-container > .hero-text-part > .hero-title {
+  font-size: 2.5em;
+  font-weight: 800;
+
+}
+.hero-container > .hero-text-part > .hero-description {
+  max-width: 380px;
+  font-weight: 300;
+}
+
+.cards-container {
+  min-width: 100vh;
+  display: flex;
+  margin: 0px 3%;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow: scroll;
+}
+
+.cards-container > .card {
+  position: relative;
+  width: 240px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
+
+.cards-container > .card > .card-status {
+  position:absolute;
+  top:4px;
+  left:6px;
+  width: 75px;
+  background-color: rgb(252, 252, 252);
+  font-size: 0.8em;
+  text-align: center;
+  color:rgb(52, 52, 52);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.cards-container > .card  p {
+  margin:1%;
+}
+
+.cards-container > .card > .details > .rating{
+  font-size: 0.8em;
+  font-weight: 200;
+  color:#918E9B;
+}
+
+.cards-container > .card > .details .star {
+  width:12px;
+  margin-right: 2px;
+}
+
+.cards-container > .card > .card-image {
+  width:100%;
+  height: 100%;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.cards-container > .card > .details > .card-title {
+  font-weight: 300;
+  font-size: 1.0em;
+}
+
+.cards-container > .card > .details > .card-title {
+  font-weight: 200;
+}
+
+.cards-container > .card > .details > p > .card-delivered-method{
+  font-weight: 200;
+}
