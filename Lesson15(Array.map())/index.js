@@ -35,3 +35,4 @@ const pTagArrays = stringsArray.map((item) => {
     return updatedItem
 })
 console.log(pTagArrays)
+
