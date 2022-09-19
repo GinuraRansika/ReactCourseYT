@@ -45,8 +45,9 @@ function Joke(props){
     console.log(props)
     return (    
         <div>
-            <h1>Setup : {props.setup}</h1>
-            <h4>Punchline : {props.punchline}</h4>
+            <hr/>
+            <h2>Setup : {props.setup}</h2>
+            <h6>Punchline : {props.punchline}</h6>
             <hr/>
         </div>
     )
@@ -66,3 +67,14 @@ function Jokes() {
 
 ReactDOM.render(<Jokes/>,document.getElementById('root'))
 
+/*
+    * What does the  `.map()` array method do?
+        ? Returns a new array. Whatever gets returned from the callback 
+        ? function provided is placed at the same index in the new  array
+        ? Usually we take the items from the original array and modify them in some way.
+
+    * WHat do we usually use `.map()` for in React?
+        ? Convert an array of raw data into an array of JSX elements that can be displayed on the page.
+        
+
+ */
