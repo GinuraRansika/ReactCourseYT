@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{
+  border: 1px solid green;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color:#F55A5A;
+  color:#fff;
+}
+
+.navbar > .logo{
+  font-size: 2.2em;
+  margin-right: 10px;
+}
+
+.navbar > .logo-name {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.cards-container{
+  margin:3%;
+}
+
+.cards-container > .card-container {
+  display:flex;
+  padding:7% 0px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.cards-container > .card-container > .image-container{
+  margin-right: 3%;
+}
+
+.cards-container > .card-container > .image-container > .card-image {
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.cards-container > .card-container > .details-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  align-items: left;
+}
+
+.cards-container > .card-container > .details-container > .location-container{
+  display: flex;
+  padding: 2% 0px;
+  justify-content: left;
+  align-items: center;
+}
+
+.cards-container > .card-container > .details-container > .location-container .location-icon{
+  color:#F55A5A;
+  margin-right: 8px;
+}
+
+.cards-container > .card-container > .details-container > .location-container .location{
+  color:#2B283A;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-right: 5%;
+}
+
+.cards-container > .card-container > .details-container > .location-container > .location-link{
+  color: #918E9B;
+  font-weight: 300;
+}
+
+.cards-container > .card-container > .details-container > .card-title{
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cards-container > .card-container > .details-container > .card-dates{
+  font-size: 1.0em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cards-container > .card-container > .details-container > .card-description{
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+
+
+
