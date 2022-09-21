@@ -1,5 +1,14 @@
 import React from "react";
 import {Container, Row, Col} from "reactstrap"
+import memesData from "../memesData.js"
+
+function randomMemeData(){
+    const memesDataArray = memesData.data.memes;
+    const randomNumber = Math.floor(Math.random() * memesDataArray.length);
+    const url = memesDataArray[randomNumber].url;
+    console.log(randomNumber)
+    console.log(url)
+}
 
 export default function Meme(){
     return(
@@ -16,14 +25,15 @@ export default function Meme(){
                     </Row>
                     <Row xs='1'>
                         <Col className="button-group">
-                            <input type={'button'} value="Get a New Meme Image" className="button"></input>
+                            <input type={'button'} value="Get a New Meme Image" className="button" onClick={randomMemeData}></input>
                         </Col>
                     </Row>
                 </form>
             </Row>
 
             <Row xs='1'>
-                <Col></Col>
+                <Col>
+                </Col>
             </Row>
         </Container>
 
