@@ -47,3 +47,19 @@ function greeting(name){
     console.log("Good " + greeting + ", " + name + "!") 
 }
 greeting("Bob")
+
+/*
+
+    ! How would you describe the concept of "state"?
+        ? A way of React to remember saved values from within a component.
+        ? This is similar to declaring variables from within component.
+
+    ! When would you want to use props instead of state?
+        ? Anytime you want to pass data into a component so that component
+        ? can determine what will get displayed on the screen.
+    
+    ! When would you want to use state instead of props?
+        ? Anytime you want a component to maintain some values from within the 
+        ? component (Ane "remember" those values even when React re-renders the component)
+
+*/
