@@ -2,18 +2,24 @@ import React from "react";
 import {Container, Row, Col} from "reactstrap"
 import memesData from "../memesData.js"
 
-
 export default function Meme() {
-    const [memeImage,setMemeImage] = React.useState("")
+    const [meme,setMeme] = React.useState({
+        topText : "",
+        bottomText : "",
+        randomImage : ""
+    })
 
-    function randomMemeData(){
-        const memesDataArray = memesData.data.memes;
-        const randomNumber = Math.floor(Math.random() * memesDataArray.length);
-        const url = memesDataArray[randomNumber].url;
-        setMemeImage(url)
-    
-        console.log(randomNumber)
-        console.log(url)
+    const [allMemeImages] = React.useState(memesData)
+
+    function randomMemeData(){ 
+        const randomNumber = Math.floor(Math.random() * allMemeImages.data.memes.length);
+        const url = allMemeImages.data.memes[randomNumber].url;
+        setMeme(prevMeme => {
+            return{
+                ...prevMeme,
+                randomImage: url
+            }
+        })
     }
 
     return(
@@ -22,10 +28,10 @@ export default function Meme() {
                 <form action="">
                     <Row sm='2' xs="1"  className="input-group">
                         <Col className="column">
-                            <input type='text' placeholder="First Part" className="input"></input>
+                            <input type='text' placeholder="Top Text" className="input"></input>
                         </Col>
                         <Col className="column">
-                            <input type='text' placeholder="Second Part" className="input"></input>
+                            <input type='text' placeholder="Bottom Text" className="input"></input>
                         </Col>
                     </Row>
                     <Row xs='1'>
@@ -41,10 +47,9 @@ export default function Meme() {
 
             <Row xs='1' className="image-row">
                 <Col className="image-container">
-                    <img src={memeImage} alt=""/>
+                    <img src={meme.randomImage} alt=""/>
                 </Col>
             </Row>
         </Container>
-
     )
 }
