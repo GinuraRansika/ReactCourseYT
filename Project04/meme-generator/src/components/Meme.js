@@ -2,15 +2,20 @@ import React from "react";
 import {Container, Row, Col} from "reactstrap"
 import memesData from "../memesData.js"
 
-function randomMemeData(){
-    const memesDataArray = memesData.data.memes;
-    const randomNumber = Math.floor(Math.random() * memesDataArray.length);
-    const url = memesDataArray[randomNumber].url;
-    console.log(randomNumber)
-    console.log(url)
-}
 
-export default function Meme(){
+export default function Meme() {
+    const [memeImage,setMemeImage] = React.useState("")
+
+    function randomMemeData(){
+        const memesDataArray = memesData.data.memes;
+        const randomNumber = Math.floor(Math.random() * memesDataArray.length);
+        const url = memesDataArray[randomNumber].url;
+        setMemeImage(url)
+    
+        console.log(randomNumber)
+        console.log(url)
+    }
+
     return(
         <Container className="meme-container">
             <Row xs='1' className="border">
@@ -28,11 +33,15 @@ export default function Meme(){
                             <input type={'button'} value="Get a New Meme Image" className="button" onClick={randomMemeData}></input>
                         </Col>
                     </Row>
+                    <Row>
+                  
+                    </Row>
                 </form>
             </Row>
 
-            <Row xs='1'>
-                <Col>
+            <Row xs='1' className="image-row">
+                <Col className="image-container">
+                    <img src={memeImage} alt=""/>
                 </Col>
             </Row>
         </Container>
