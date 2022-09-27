@@ -45,3 +45,18 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+/*
+    * You have 2 options for what you can pass in to a state setter function
+    * (e.g. `setCount`). What are they?
+            ? New value of state (setCount(442))
+            ? Callback function - whatever the callback function returns === new value of state
+
+    * When would you want to pass the first option to the state setter function?
+            ? Whenever you don't need the previous value of state to determine what the
+                    ? new value of state should be.
+    
+    * When would you want to pass the second option to the state setter function?
+            ? Whenever you DO need the previous value to determine the new value
+*/
