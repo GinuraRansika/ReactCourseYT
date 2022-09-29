@@ -16,13 +16,18 @@ function App(props) {
 
     // ! styles need to be in camelCase like we did using dom elements in JS
         // * example : document.getElementById("id").style.backgroundColor = color;
-    const styles = {
-      backgroundColor: props.darkMode?"#E80F88":"#AF0171",
+    const boxStyles = {
+      backgroundColor: props.darkMode?"#E80F88":"#F07DEA",
+      borderColor:props.darkMode?"white":"black",
     }
-    const squareElements = squares.map(square => <div style={styles} key={square.id} className="square"></div>)
+    const backgroundStyles ={
+      backgroundColor:props.darkMode?"black":"white",
+      height:"100vh"
+    }
+    const squareElements = squares.map(square => <div style={boxStyles} key={square.id} className="square"></div>)
 
   return (
-  <main>
+  <main style={backgroundStyles}>
     {squareElements}
   </main>
   );
