@@ -28,12 +28,23 @@ function App(props) {
         })
     }
 
-    console.log(squares)
+    function changeSquareOn2Method(id) {
+        setSquares(prevSquares => {
+            return(
+                prevSquares.map((square) => {
+                     return square.id === id ? {...square, on: !square.on} : square
+                })
+            )
+        })
+
+    }
+
     const squareElements = squares.map(square => <Box 
         key={square.id}
         id={square.id}
         on={square.on}
-        changeOnFunction = {changeSquareOn}
+
+        changeOnFunction = {changeSquareOn2Method}
     />)
 
 
