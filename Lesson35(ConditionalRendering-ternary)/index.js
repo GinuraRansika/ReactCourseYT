@@ -9,9 +9,12 @@ function Joke(props) {
     return (
         <div>
             {props.setup && <h3>{props.setup}</h3>}
-            {/* //* will show if the isShown is true */}
+
+            {/* //* && Operator - when you either want something to display or not display */}
             {isShown && <p>{props.punchline}</p> }
-            <button onClick={toggleShown}>Show Punchline: {isShown? "true":"false"}</button>
+
+            {/* //* Ternary Operator - when you want to choose between one of two things to display */}
+            <button onClick={toggleShown}>{isShown ? "Hide" : "Show"} Punchline</button>
             <hr/>
         </div>
     )
