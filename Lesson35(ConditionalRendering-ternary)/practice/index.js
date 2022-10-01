@@ -30,3 +30,15 @@ root.render(
   </React.StrictMode>
 );
 
+/*
+    ! What is "conditional rendering" ?
+        * When we want to only sometimes display something on the page based on a condition of some sort
+
+    ! When would you use && ?
+        * When you want to either display something or NOT display it 
+
+    ! When would you use a ternary?
+        * When you need to decide which thing among 2 options to display 
+
+    ? if you use 'if..else' 'if...else if...else' or 'switch' statements you need to add those outside of the return of your function
+*/
