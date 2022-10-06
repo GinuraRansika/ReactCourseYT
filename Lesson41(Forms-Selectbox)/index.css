@@ -1,0 +1,69 @@
+.text-input{
+    font-size: 1.5em;
+    border: 3px solid rgb(105, 105, 209);
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 2%;
+    height: 50px;
+    width: 400px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+main{
+    border:1px solid black;
+    padding: 10%;
+}
+
+textarea{
+    font-size: 1.5em;
+    border: 3px solid rgb(105, 105, 209);
+    border-radius: 10px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 2%;
+    height: 100px;
+    width: 500px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+
+.checkbox{
+    margin-right: 10px;
+
+}
+
+.checkbox-container{
+    padding: 2%;
+}
+
+fieldset > legend {
+    font-size: 1.5em;
+}
+
+
+.radio-container {
+    font-size: 1.3em;
+    display: block;
+    padding: 2%;
+    margin: 2%;
+}
+
+.select-box-container{
+    margin:5% 0px;
+    padding: 2%;
+    font-size: 1.3em;
+}
+
+.select-box-container > select{
+    display: block;
+    margin: 2% 0px;
+    width: 300px;
+    font-size: 1.3em;
+}
