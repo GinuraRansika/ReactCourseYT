@@ -162,3 +162,26 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+/*
+    ! In a vanilla JS app, at what point in the form submission process do you gather
+    ! all the data from the filled-out form?
+        ? Right before the form is submitted
+
+    ! In a React app, when do you gather all the data from the filled-out form?
+        ? As the form is being filled out. The data is all held in local state(not in html state)
+
+    ! Which attribute in the form elements (value, name, onChange, etc.) should match the
+    ! property name being held in state for that input?
+        ? name property - we use it to help us in our onChange so that we know which property in state to update whenever a change happens
+
+    ! What's different about a saving the data from a checkbox element vs. other form elements?
+        ? other - we use the value property to know how we should update our state
+        ? but in checkbox - we're looking specifically for the checked property
+
+    ! How do you watch for a form submit? How can you trigger a form submit?
+        ? we can add an onSubmit handle on the 'form" element - how we can watch for a form submit
+        ? can trigger the form submit with a button click.
+
+*/
