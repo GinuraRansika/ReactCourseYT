@@ -1,0 +1,30 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #FF7C43;
+   color: white;
+   margin: 0;
+   padding: 2rem;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+button {
+   border: none;
+   border-radius: 5px;
+   padding: 1rem;
+   width:60%;
+   cursor:pointer;
+   background-color: #fff;
+}
+
+h1 {
+   text-align: center;
+}
