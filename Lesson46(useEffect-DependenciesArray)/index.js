@@ -59,3 +59,25 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+/*
+    ! What is a "side effect" in React? What are some examples? 
+        ? Any code that affects an outside system.
+        ? examples - local storage, API, websocket, two states to keep in sync with each other
+
+    ! What is NOT a "side effect" in React? Examples?
+        ? Anything that React is in charge of 
+        ? maintaining state between one render to the next, keeping the UI in sync with the data
+        ? render DOM elements
+
+    ! When does React run your useEffect function? When does it NOT run the effect function?
+        ? As soon as the component loads (first render)
+        ? On every re-render of the component (assuming no dependencies array)
+        ? will NOT run the effect when the values of the dependencies in the array stay the same between renders
+
+    ! How would you explain what the "dependencies array" is?
+        ? Second parameter to the useEffect function
+        ? A way for React to know whether it should re-run the effect function 
+
+*/
