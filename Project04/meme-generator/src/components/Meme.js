@@ -1,19 +1,33 @@
 import React from "react";
 import {Container, Row, Col} from "reactstrap"
-import memesData from "../memesData.js"
+
+//! updated this to work with a API call instead of saved memes in the memesData.js file
+// import memesData from "../memesData.js"  
 
 export default function Meme() {
+
     const [meme,setMeme] = React.useState({
         topText : "",
         bottomText : "",
         randomImage : "http://i.imgflip.com/1bij.jpg",
     })
 
-    const [allMemeImages] = React.useState(memesData)
+    //* empty array to be filled with our memes as soon as the our component loads the first time
+    const [allMemes, setAllMemes] = React.useState([]) 
 
+    //* res => res.json() means is we take the response and parse the json into javascript
+    React.useEffect(function() {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(fetchedData => {
+                setAllMemes(fetchedData.data.memes)
+            })
+    }, [])
+    console.log(allMemes)
+ 
     function randomMemeData(){ 
-        const randomNumber = Math.floor(Math.random() * allMemeImages.data.memes.length);
-        const url = allMemeImages.data.memes[randomNumber].url;
+        const randomNumber = Math.floor(Math.random() * allMemes.length);
+        const url = allMemes[randomNumber].url;
         setMeme(prevMeme => {
             return{
                 ...prevMeme,
@@ -30,7 +44,6 @@ export default function Meme() {
                 [name]:value,
             })
         })
-
     }
 
     return(
